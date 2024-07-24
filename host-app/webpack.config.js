@@ -71,7 +71,7 @@ module.exports = (_, argv) => ({
         recent_activity: 'recent_activity@http://localhost:3003/remoteEntry.js',
       },
       exposes: {
-        "./Layout": "./src/Layout.jsx"
+        "./App": "./src/App.jsx"
       },
       shared: {
         ...deps,
