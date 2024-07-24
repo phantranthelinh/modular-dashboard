@@ -65,12 +65,14 @@ module.exports = (_, argv) => ({
       name: "host_app",
       filename: "remoteEntry.js",
       remotes: {
+        host_app: 'host_app@http://localhost:8080/remoteEntry.js',
         task_overview: 'task_overview@http://localhost:3001/remoteEntry.js',
         compliance_status: 'compliance_status@http://localhost:3002/remoteEntry.js',
         recent_activity: 'recent_activity@http://localhost:3003/remoteEntry.js',
-
       },
-      exposes: {},
+      exposes: {
+        "./Layout": "./src/Layout.jsx"
+      },
       shared: {
         ...deps,
         react: {
