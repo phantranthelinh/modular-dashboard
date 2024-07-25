@@ -5,9 +5,9 @@ const MainLayout = () => {
   return (
     <>
       <Sidebar />
-      <div className="sm:ml-64">
+      <section className="sm:ml-64 pl-4 h-screen ">
         <Outlet />
-      </div>
+      </section>
     </>
   )
 }
