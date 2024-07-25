@@ -12,7 +12,6 @@ Note: microfrontends run in the following addresses:
 - Task Overview: localhost:3001
 - Compliance Status: localhost:3002
 - Recent Activity: localhost:3003
-```bash
 
 
 ## Technical details
