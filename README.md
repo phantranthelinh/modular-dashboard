@@ -1,27 +1,19 @@
 ## Usage
+To start, first run `npm install` for **each** project
 
-```bash
-git clone https://github.com/phantranthelinh/modular-dashboard.git
-
-cd task-overview
-npm install
-npm start
-
-cd compliance-status
-npm install
-npm start
-
-cd recent-activity
-npm install
-npm start
-
-cd host-app
-npm install
-npm start
-
+Then for each project, open new terminal and run:
 ```
+npm start
+```
+
+Finally, access the app shell at `http://localhost:8080` to see result
+
+Note: microfrontends run in the following addresses:
+- Task Overview: localhost:3001
+- Compliance Status: localhost:3002
+- Recent Activity: localhost:3003
+```bash
 
 
 ## Technical details
-
 - `web` was build with [create-mf-app](https://github.com/jherr/create-mf-app)
